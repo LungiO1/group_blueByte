@@ -1,0 +1,143 @@
+{
+  "scenarios":[
+    {
+      "taskType":"bring",
+      "targetObject":"phone",
+      "key":"BringPhone",
+      "questions":[
+        "I would like to purchase the latest IPhone",
+        "I'm interested in acquiring a new mobile device. A Samsumg Flip 5.",
+        "I'm in the market for a new smartphone, a powerful one. No budget here.",
+        "I cannot pay online, could I buy a Blackberry-X80 from your shop?"
+      ],
+      "answers":[
+        "Of course, I will gladly bring you this smartphone.",
+        "Listen, I don’t want to serve you.",
+        "No problem, I'll have a smartphone for you in just a minute."
+      ],
+      "result":[
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "taskType":"bring",
+      "targetObject":"smartWatch",
+      "key":"BringSmartWatch",
+      "questions":[
+        "I need a Samsung SmartWatch to pair it with my phone, can you help me?",
+        "I'm interested in acquiring a new smart watch. Say, the latest Samsung Watch.",
+        "I'm in the market for a new smartwatch. Feel free to suggest me the best one.",
+        "I'm looking for a smartwatch that can track my sleep and my heart rate."
+      ],
+      "answers":[
+        "Of course, I will bring you the best smartwatch we have.",
+        "I'll get you latest Samsung SmartWatch.",
+        "With respect, you are better off looking at Sunrise."
+      ],
+      "result":[
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "taskType":"bring",
+      "targetObject":"tvRemote",
+      "key":"BringTvRemote",
+      "questions":[
+        "I would like a new TV remote:",
+        "I'm looking to purchase a new TV remote.",
+        "Interested in obtaining a new TV remote for my entertainment system."
+      ],
+      "answers":[
+        "I have the perfect remote control for you.",
+        "No.",
+        "You should try to use your TV Box without a remote control."
+      ],
+      "result":[
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "taskType":"answer",
+      "targetObject":"none",
+      "key":"AnswerBillQuestion",
+      "questions":[
+        "How can I make a payment for my bill?"
+      ],
+      "answers":[
+        "Feel free to use the MySwisscom app for your convenience.",
+        "You can pay your bill at the desk.",
+        "I can't help you."
+      ],
+      "result":[
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "taskType":"answer",
+      "targetObject":"none",
+      "key":"AnswerHotlineQuestion",
+      "questions":[
+        "What is the hotline number for inquiries?"
+      ],
+      "answers":[
+        "0000 000 000",
+        "0800 800 800",
+        "0790 000 000"
+      ],
+      "result":[
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "taskType":"answer",
+      "targetObject":"none",
+      "key":"AnswerHotlineQuestion",
+      "questions":[
+        "How can I cancel my abo?",
+        "How can I cancel my subscription?",
+        "How can I cancel my contract?"
+      ],
+      "answers":[
+        "You can go to the desk and ask the agent for a cancellation.",
+        "You can cancel your subscription in the MySwisscom.",
+        "Salt is looking for new customers."
+      ],
+      "result":[
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "taskType":"answer",
+      "targetObject":"none",
+      "key":"AnswerHotlineQuestion",
+      "questions":[
+        "Hi I would like to purchase a new SmartWatch with great deals.",
+        "Good morning, where could I find about the latest deals that swisscom offers?",
+        "Hello, I would like to know if there are any deals for the new iPhone 55 Giga Pro Max."
+      ],
+      "answers":[
+        "Listen, I don’t know, I don’t care.",
+        "On MySwisscom App you will find all the latest deals.",
+        "All the deals are listed in MySwisscom app for your convenience."
+      ],
+      "result":[
+        0,
+        2,
+        1
+      ]
+    }
+  ]
+}
+
